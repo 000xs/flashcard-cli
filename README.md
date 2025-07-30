@@ -71,6 +71,26 @@ To run the application directly:
 python -m flashcard_cli.main
 ```
 
+## Publishing to PyPI
+
+To publish the package to PyPI, you need to build the package and then upload it to PyPI.
+
+### Build the Package
+
+```bash
+python -m build
+```
+
+This will create a `dist` directory with the built package.
+
+### Upload to PyPI
+
+```bash
+twine upload dist/*
+```
+
+**Note:** You will need to have `twine` installed (`pip install twine`) and have a PyPI account.
+
 ## GitHub Workflow for PyPI Release
 
 To automate the release process to PyPI, you can set up a GitHub workflow. See `.github/workflows/release.yml` for the workflow configuration.

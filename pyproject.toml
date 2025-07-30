@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "flashcard-cli"
 version = "0.0.1"
 authors = [
-  { name="Your Name", email="you@example.com" },
+  { name="000xs", email="000xs@users.noreply.github.com" },
 ]
 description = "A terminal-based flashcard system."
 readme = "README.md"
@@ -23,8 +23,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/your-username/flashcard-cli"
-"Bug Tracker" = "https://github.com/your-username/flashcard-cli/issues"
+"Homepage" = "https://github.com/000xs/flashcard-cli"
+"Bug Tracker" = "https://github.com/000xs/flashcard-cli/issues"
 
 [project.scripts]
 flashcard = "flashcard_cli.main:app"

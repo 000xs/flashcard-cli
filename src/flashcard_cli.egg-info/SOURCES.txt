@@ -1,6 +1,7 @@
 README.md
 pyproject.toml
 setup.cfg
+setup.py
 src/flashcard_cli/__init__.py
 src/flashcard_cli/data.py
 src/flashcard_cli/db.py
