@@ -42,11 +42,15 @@ This command will start a learning session, presenting each flashcard in a visua
 
 ### Other Commands
 
-*   `flashcard manage`: List all flashcards in the current deck.
- ![alt text](image-3.png)
- ![alt text](image-4.png)
+*   `flashcard list`: List all flashcards in the current deck.
+*   `flashcard edit <id>`: Edit a specific flashcard,
+*   `flashcard delete <id>`: Delete a specific flashcard,
+*   `flashcard import <file>`: Import flashcards from a JSON file.
+*   `flashcard export <file>`: Export flashcards to a JSON file.
 
- 
+## Configuration
+
+Flashcard CLI stores flashcards in a JSON file (`flashcards.json` by default). You can customize the location of this file by setting the `FLASHCARD_DB` environment variable.
 
 ## Troubleshooting
 
@@ -64,8 +68,16 @@ pip install -e .
 To run the application directly:
 
 ```bash
-flashcard
+python -m flashcard_cli.main
 ```
+
+## GitHub Workflow for PyPI Release
+
+To automate the release process to PyPI, you can set up a GitHub workflow. See `.github/workflows/release.yml` for the workflow configuration.
+
+**Note:**
+
+*   You will need to configure a PyPI API token as a secret in your GitHub repository settings.
 
 ## Contributing
 
