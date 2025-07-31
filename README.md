@@ -1,9 +1,10 @@
 # Flashcard CLI - Your Terminal-Based Learning Companion
 
 Flashcard CLI is a powerful and versatile command-line tool designed to help you learn and memorize information effectively using flashcards. Whether you're a student, a professional, or simply someone who enjoys learning, Flashcard CLI provides a convenient and engaging way to study and review your knowledge.
+![alt text](flascard-cli-image.jpg)
 
 
-![alt text](image.png)
+ 
 ## Key Features
 
 *   **Easy to Use:** Simple and intuitive command-line interface.
@@ -26,20 +27,21 @@ pip install flashcard-cli
 ```bash
 flashcard add
 ```
-
+![alt text](<Screenshot 2025-07-31 074056.png>)
 This command will prompt you to enter a question and answer for your flashcard. The flashcard will be saved to `flashcards.json` by default.
 
-![alt text](image-1.png)
+ 
 
 ### Starting a Learning Session
 
 ```bash
 flashcard start
 ```
+![alt text](<Screenshot 2025-07-31 100754.png>)
 
 This command will start a learning session, presenting each flashcard in a visually appealing card-like panel. The system will wait for you to press Enter to reveal the answer, then ask if you got it right. After all flashcards, it will show a summary of your performance.
 
-![alt text](image-2.png)
+ 
 
 ### Other Commands
 

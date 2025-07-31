@@ -19,8 +19,8 @@ def start():
     """
     Starts the flashcard learning session.
     """
-    from flashcard_cli.start import start_flashcards
-    start_flashcards()
+    app_instance = FlashcardApp(initial_screen="start")
+    app_instance.run()
 
 # flashcard mannage commands
 @app.command()
