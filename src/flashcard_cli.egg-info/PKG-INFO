@@ -18,6 +18,7 @@ Requires-Dist: textual
 
 Flashcard CLI is a powerful and versatile command-line tool designed to help you learn and memorize information effectively using flashcards. Whether you're a student, a professional, or simply someone who enjoys learning, Flashcard CLI provides a convenient and engaging way to study and review your knowledge.
 
+
 ![alt text](image.png)
 ## Key Features
 
@@ -58,20 +59,16 @@ This command will start a learning session, presenting each flashcard in a visua
 
 ### Other Commands
 
-*   `flashcard list`: List all flashcards in the current deck.
-*   `flashcard edit <id>`: Edit a specific flashcard,
-*   `flashcard delete <id>`: Delete a specific flashcard,
-*   `flashcard import <file>`: Import flashcards from a JSON file.
-*   `flashcard export <file>`: Export flashcards to a JSON file.
+*   `flashcard manage`: manag flascard with edit and delete.
+  
+![alt text](image-5.png)
+ 
 
 ## Configuration
 
-Flashcard CLI stores flashcards in a JSON file (`flashcards.json` by default). You can customize the location of this file by setting the `FLASHCARD_DB` environment variable.
-
+ 
 ## Troubleshooting
-
-*   **Flashcards not loading:** Ensure that the `flashcards.json` file exists and is in the correct format.
-*   **Command not found:** Make sure that the Flashcard CLI is installed correctly and that the `flashcard` command is in your system's PATH.
+ Make sure that the Flashcard CLI is installed correctly and that the `flashcard` command is in your system's PATH.
 
 ## Development
 
@@ -81,11 +78,7 @@ To install in editable mode:
 pip install -e .
 ```
 
-To run the application directly:
-
-```bash
-python -m flashcard_cli.main
-```
+ 
 
 ## Publishing to PyPI
 
@@ -123,4 +116,4 @@ Contributions are welcome! Please submit a pull request with your changes.
 
 This project is licensed under the MIT License.
 
-**Note:** Replace the "(Image: ...)" placeholders with actual image links or references in your README file. You can store the images in a separate "images" folder and link to them from the README.
+ 

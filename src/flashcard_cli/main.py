@@ -1,7 +1,7 @@
 import typer
 from rich.console import Console
-from rich.prompt import Prompt
 from flashcard_cli.data import load_flashcards, save_flashcard
+from flashcard_cli.tui import FlashcardApp
 
 app = typer.Typer()
 console = Console()
@@ -9,13 +9,10 @@ console = Console()
 @app.command()
 def add():
     """
-    Adds a new flashcard. flashcard add command
+    Adds a new flashcard using a Textual UI.
     """
-    question = Prompt.ask("Enter the question")
-    answer = Prompt.ask("Enter the answer")
-
-    save_flashcard(question, answer)
-    console.print("[bold green]Flashcard added![/bold green]")
+    app_instance = FlashcardApp(initial_screen="add_flashcard")
+    app_instance.run()
 
 @app.command()
 def start():
@@ -38,9 +35,8 @@ def manage():
         - center add selct  listed cards
         - footer include key guide
     """
-    from flashcard_cli.tui import FlashcardApp
-    app = FlashcardApp()
-    app.run()
+    app_instance = FlashcardApp(initial_screen="main")
+    app_instance.run()
    
 
 def main():
